@@ -1,0 +1,138 @@
+YOUR INITIAL COMMIT
+
+mkdir  git-basic-exercises
+cd git-basic-exercises
+ls -a
+git init
+ls -a
+git status
+touch README.md
+ls -a
+git status
+git log
+git add README.md
+git status
+git reset -- README.md
+git status
+git add README.md
+git status
+git commit  -m "initial commit"
+
+MORE COMMITS
+
+nano README.md
+cat README.md
+git status
+git add README.md
+git commit -m "second commit"
+nano README.md
+cat README.md
+git status
+git add README.md
+git commit -m "third commit"
+git log
+git checkout f7c48f033cb1a2b0f880c5a9e64a7edfe8ebaa3c
+cat README.md
+git checkout master
+cat README.md
+git checkout
+
+BRANCHING
+
+git branch
+git branch milkshake-flavours
+git branch
+git checkout milkshake-flavours
+nano milkshakes.md
+git status
+git add milkshakes.md
+git commit -m "added initial flavours"
+git log
+git checkout master
+git branch history
+git log
+history > history.txt
+git status
+git add history.txt
+git commit -m "added history"
+git log
+git checkout milkshake-flavours
+git log
+nano README.md
+git add README.md
+git commit  -m "random readme changes"
+cat README.md
+rm README.md echo "booya" > README.md
+rm README.md | echo "booya" > README.md
+git add README.md
+git commit -m "rewrote readme"
+
+TRACKING
+
+git checkout master
+git log 
+git checkout milkshake-flavours
+ls
+git log
+
+MERGING
+
+git checkout master
+git merge milkshake-flavours
+git add README.md
+git commit -m "fix merge error"
+git merge milkshake flavours
+git log
+git merge history
+git add README.md
+git commit -m "fix second merge error"
+git log
+git merge history
+git log
+git checkout history
+git log
+git checkout milkshake-flavours
+git log 
+git checkout history
+git merge master
+git log
+git checkout master
+git log
+
+PULLING AND REMOTES
+
+cd 
+git clone https://github.com/Umuzi-org/tech-department.git
+cd tech-department
+git branch
+git log
+git branch -a 
+git remote -v
+
+MULTIPLE REPOS
+
+git checkout project/git-basic-exercises
+git log
+git checkout -B project/git-basic-exercises
+git log
+
+GITINORE
+
+touch ignore-me.db
+git status
+nano gitinore
+git status
+git add gitinore
+git commit  -m "ignore-me.db"
+mkdir large-directory-that-should-be-local-only
+cd ..
+git status
+nano gitinore
+git status
+cd large-directory-that-should-be-local-only
+git status
+
+
+
+
+
